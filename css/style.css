@@ -1,0 +1,143 @@
+@font-face {
+  font-family: myFont;
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf"); }
+
+.result__display-actual, .result__comment {
+  color: #fff;
+  font-weight: 700; }
+
+.result__report, .result__summary {
+  flex: 1;
+  padding: 2.5rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 520px) {
+    html {
+      font-size: 58%; } }
+
+body {
+  font-family: myFont;
+  font-weight: 600;
+  color: #303b59;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem; }
+  @media (max-width: 520px) {
+    body {
+      height: 100%;
+      padding: 0 0 1rem; } }
+
+.result {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  height: auto;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 5px 10px 10px -5px #eeeeeec7; }
+  @media (max-width: 520px) {
+    .result {
+      flex-direction: column;
+      border-radius: 0;
+      box-shadow: none; } }
+  .result__report {
+    background: linear-gradient(180deg, #7857ff, #2e2be9);
+    text-align: center;
+    color: #eeeeeec7;
+    border-radius: 0 2.5rem 2.5rem 0; }
+    @media (max-width: 520px) {
+      .result__report {
+        border-radius: 0 0 2.5rem 2.5rem; } }
+  .result__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem; }
+  .result__display {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    padding: 2rem;
+    background: linear-gradient(180deg, #4e21ca, rgba(36, 33, 202, 0));
+    margin: 0 auto 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 520px) {
+      .result__display {
+        height: 12rem;
+        width: 12rem; } }
+    .result__display-actual {
+      display: block;
+      font-size: 5rem; }
+  .result__comment {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
+  .result__score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem; }
+    .result__score-icon {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      margin-top: -0.4rem; }
+    .result__score--reaction {
+      background-color: rgba(255, 87, 87, 0.1); }
+      .result__score--reaction-text {
+        color: #ff5757;
+        display: inline-block; }
+    .result__score--memory {
+      background-color: rgba(255, 176, 31, 0.1); }
+      .result__score--memory-text {
+        color: #ffb01f;
+        display: inline-block; }
+    .result__score--verbal {
+      background-color: rgba(0, 189, 145, 0.1); }
+      .result__score--verbal-text {
+        color: #00bd91;
+        display: inline-block; }
+    .result__score--visual {
+      background-color: rgba(17, 37, 212, 0.1); }
+      .result__score--visual-text {
+        color: #1125d4;
+        display: inline-block; }
+    .result__score-value {
+      color: rgba(48, 59, 89, 0.6); }
+    .result__score-actual {
+      color: #303b59; }
+
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 999em;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: linear-gradient(180deg, #303b59, #303b59);
+  color: #fff;
+  margin-top: 1.5rem;
+  transition: all 0.2s; }
+  .btn:hover {
+    transform: translateY(-2px); }
+  .btn:active {
+    background: linear-gradient(180deg, #7857ff, #2e2be9);
+    transform: translateY(0); }

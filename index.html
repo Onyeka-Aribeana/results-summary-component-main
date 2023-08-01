@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="result">
+    <div class="result__report">
+      <p class="result__heading">Your Result</p>
+      <div class="result__display">
+        <p class="result__display-value">
+          <span class="result__display-actual">76</span> of 100
+        </p>
+      </div>
+      <div class="result__details">
+        <p class="result__comment">Great</p>
+        <p class="result__description">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="result__summary">
+      <p class="result__heading">Summary</p>
+      <div class="result__score result__score--reaction">
+        <div class="result__score-name">
+          <img class="result__score-icon" src="assets/images/icon-reaction.svg" alt="Reaction" aria-hidden="true">
+          <p class="result__score--reaction-text">Reaction</p>
+        </div>
+        <p class="result__score-value"><span class="result__score-actual">80</span> / 100</p>
+      </div>
+      <div class="result__score result__score--memory">
+        <div class="result__score-name">
+          <img class="result__score-icon" src="assets/images/icon-memory.svg" alt="Memory" aria-hidden="true">
+          <p class="result__score--memory-text">Memory</p>
+        </div>
+        <p class="result__score-value"><span class="result__score-actual">92</span> / 100</p>
+      </div>
+      <div class="result__score result__score--verbal">
+        <div class="result__score-name">
+          <img class="result__score-icon" src="assets/images/icon-verbal.svg" alt="Verbal" aria-hidden="true">
+          <p class="result__score--verbal-text">Verbal</p>
+        </div>
+        <p class="result__score-value"><span class="result__score-actual">61</span> / 100</p>
+      </div>
+      <div class="result__score result__score--visual">
+        <div class="result__score-name">
+          <img class="result__score-icon" src="assets/images/icon-visual.svg" alt="Visual" aria-hidden="true">
+          <p class="result__score--visual-text">Visual</p>
+        </div>
+        <p class="result__score-value"><span class="result__score-actual">72</span> / 100</p>
+      </div>
+      <button class="btn result__btn">Continue</button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Onyeka-Aribeana">Onyeka-Aribeana</a>.
+  </div>
+</body>
+
+</html>
